@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-search-results" %}
+
+{% block title %}
+        <title>Pontos de Coleta</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/search-results.css">
+{% endblock styles %}
+
+{% block content %}
+<div class="content">
+    <header>
+        <a href="/">
+            <img src="/icones/logo.svg" alt="Logomarca">
+        </a>
+        <a href="/"> <span></span> 
+            Voltar para home
+        </a>
+    </header>
+    <main>
+
+    {% if total > 0 %}
+        <h4>
+            <strong>{{ total }}</strong> encontrados
+        </h4>
+
+        <div class="cards">
+            {% for place in places %}
+                <div class="card">
+                    <img src="{{ place.image }}" alt="{{ place.name }}">
+                    <h1>{{ place.name }}</h1>
+                    <h3>{{ place.items }}</h3>
+                    <p>{{ place.city }}, {{ place.state }}
+                                <br/>
+                        {{ place.address }}
+                                <br/>
+                        {{ place.address2 }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+
+    {% else %}
+        <h4>Não há pontos de coleta cadastrados para a sua região :(</h4>
+    {% endif %}
+    </main>
+</div>
+{% endblock content %}

@@ -1,0 +1,94 @@
+#modal {
+    background-color: #0e0a14ef;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms;
+}
+
+#modal .content {
+    margin-top: 50vh;
+    color: white;
+    width: 420px;
+}
+
+#modal .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+#modal .header a {
+    background-image: url("../icones/x.svg");
+    width: 20px;
+    height: 20px;
+    display: flex;
+    font-size: 0.01px;
+}
+
+#modal .header h1 {
+    color: white;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+#modal form label {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#modal form input {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    padding: 16px 24px;
+    color: #6c6c80;
+}
+
+div .search-field {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 16px;
+}
+
+#modal .content button {
+    width: 420px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+#modal .content button:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+#modal.hide {
+    display: none;
+}
+
+#modal.created-point .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+#modal.created-point h1 {
+    color: white;
+    margin-left: 32px;
+}

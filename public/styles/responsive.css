@@ -1,0 +1,142 @@
+@media (max-width: 900px) {
+    #page-home {
+        background-position-x: 70vw;
+    }
+
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+    }
+
+    #page-search-results .cards img {
+        height: 250px;
+    }
+}
+
+@media (min-width: 1700px) {
+    #page-home {
+        background-position-x: 40vw;
+    }
+}
+
+@media (max-height: 760px) {
+    #page-home {
+        background-position-y: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    #page-home .content {
+        width: 70%;
+    }
+
+    #page-home main h1 {
+        font-size: 36px;
+    }
+
+    #page-home main p {
+        font-size: 24px;
+        margin-top: 15px;
+    }
+
+    #page-create-point {
+        width: 90%;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    form {
+        background-color: white;
+        padding: 16px;
+        margin: 40px auto;
+        border-radius: 8px;
+    }
+
+    form h1 {
+        font-size: 24px;
+    }
+
+    form fieldset  {
+        margin-top: 40px;
+        border: 0;
+    }
+
+    form legend h2 {
+        font-size: 16px;
+    }
+
+    form .field-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form .field-group .field + .field {
+        margin-left: 0;
+    }
+
+    .items-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    form button {
+        margin-left: 100px;
+        transform: translateX(-25%);
+    }
+
+    #page-create-point header {
+        margin-top: 24px;
+    }
+
+    #page-create-point header a {
+        font-size: 0.1px;
+    }
+
+    #page-create-point header a span {
+        margin-right: 24px;
+    }
+}
+
+@media (max-width: 425px) {
+    #page-home main {
+        position: absolute;
+        top: 150px;
+        max-width: 90%;
+    }
+
+
+    #page-home header a span {
+        width: 25px;
+        height: 20px;
+        margin: 5px;
+    }
+
+    .items-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    form button {
+        margin: 20px 0;
+        width: 250px;
+        height: 50px;
+
+    }
+}
